@@ -17,7 +17,7 @@ cp .env.example .env
 # And setup your openvpn username and password.
 vim .env
 
-# Else pleaes remove the VPN_AUTH line from the docker-compose.yml
+# Else please remove the VPN_AUTH line from the docker-compose.yml
 
 # Finally up the container
 docker-compose up
