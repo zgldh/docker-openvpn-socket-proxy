@@ -1,6 +1,6 @@
 # docker-openvpn-socket-proxy
 
-A docker solution to export a openvpn client as a socket5 proxy.
+A docker solution to export an openvpn client as a socket5 proxy.
 
 ## Made with:
 - https://github.com/dperson/openvpn-client (The openvpn launcher code)
