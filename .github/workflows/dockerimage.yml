@@ -19,7 +19,7 @@ jobs:
       # uses: zenato/docker-action@8309ea4d790d074676660449b9f2bcbcae25cdb9
       uses: zenato/docker-action@v1.0.0
       with:
-        working-directory: dockers/openvpn-client
+        entryPoint: dockers/openvpn-client
         # Registry username
         username: zgldh
         # Registry password
