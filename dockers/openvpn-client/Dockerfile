@@ -7,9 +7,9 @@ RUN apk --no-cache --no-progress upgrade && \
   addgroup -S vpn && \
   rm -rf /tmp/*
 
-COPY openvpn.sh /usr/bin/
-COPY sockd.sh /usr/local/bin/
-COPY sockd.conf /etc/
+COPY ./openvpn.sh /usr/bin/
+COPY ./sockd.sh /usr/local/bin/
+COPY ./sockd.conf /etc/
 
 HEALTHCHECK --interval=60s --timeout=15s --start-period=120s \
   CMD curl -LSs 'https://api.ipify.org'
