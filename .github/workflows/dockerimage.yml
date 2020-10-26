@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - working-directory: dockers/openvpn-client
     - uses: actions/checkout@v2
     - name: Docker Action
       # You may pin to the exact commit or the version.
       # uses: zenato/docker-action@8309ea4d790d074676660449b9f2bcbcae25cdb9
       uses: zenato/docker-action@v1.0.0
       with:
+        working-directory: dockers/openvpn-client
         # Registry username
         username: zgldh
         # Registry password
